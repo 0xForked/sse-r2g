@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="index.js"></script>
+        <!--suppress JSUnresolvedLibraryURL -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <title>SSE-R2G</title>
+    </head>
+    <body class="w-min-full h-min-full ">
+        <main class="h-screen flex items-center justify-center">
+            <section id="unsupported-stream-screen" class="hidden text-center space-y-4">
+                <h1 class="text-3xl font-bold">
+                    Oops!
+                </h1>
+                <h4 class="text-xl text-gray-500">
+                    Sorry, your browser does not support server-sent events...
+                </h4>
+            </section>
+            <section id="supported-stream-screen" class="hidden text-center space-y-8">
+                <div class="space-y-2">
+                    <h1 class="text-3xl font-bold">
+                        Server-sent event!
+                    </h1>
+                    <h2 class="text-2xl text-gray-500">
+                        In-app notifications . . .
+                    </h2>
+                </div>
+                <button id="fire-notify-button" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-4 px-6 rounded">
+                    Fire Notify
+                </button>
+            </section>
+        </main>
+    </body>
+</html>
